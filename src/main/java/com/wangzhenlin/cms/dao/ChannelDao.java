@@ -4,18 +4,20 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
+import com.wangzhenlin.cms.pojo.Channel;
 import com.wangzhenlin.cms.pojo.User;
 
 
-public 	interface BaseDao<T> {
+public interface ChannelDao {
 
-	List<T> List(T t);
+	List<Channel> List(Channel channel);
 	
 	User ListById(@Param("id")Integer id);
 	
-	int insert(T t);
+	int insert(Channel channel);
 	
-	int Update(T t);
+	int Update(Channel channel);
 	
 	int Deletes(@Param("ids")String ids);
+
 }

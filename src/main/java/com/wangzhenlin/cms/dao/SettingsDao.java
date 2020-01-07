@@ -4,18 +4,20 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
+import com.wangzhenlin.cms.pojo.Settings;
 import com.wangzhenlin.cms.pojo.User;
 
 
-public 	interface BaseDao<T> {
+public interface SettingsDao {
 
-	List<T> List(T t);
+	List<Settings> List(Settings settings);
 	
 	User ListById(@Param("id")Integer id);
 	
-	int insert(T t);
+	int insert(Settings settings);
 	
-	int Update(T t);
+	int Update(Settings settings);
 	
 	int Deletes(@Param("ids")String ids);
+
 }

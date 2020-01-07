@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.wangzhenlin.cms.dao.UserDao;
+import com.wangzhenlin.cms.dao.UserDao1;
 import com.wangzhenlin.cms.pojo.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -16,7 +16,7 @@ import com.wangzhenlin.cms.pojo.User;
 public class UserTests {
 
 	@Autowired
-	private UserDao userDao;
+	private UserDao1 userDao;
 	@Test
 	public void test() {
 		List<User> userList = userDao.select(null);

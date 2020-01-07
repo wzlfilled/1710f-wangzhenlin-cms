@@ -4,18 +4,20 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
+import com.wangzhenlin.cms.pojo.Collect;
 import com.wangzhenlin.cms.pojo.User;
 
 
-public 	interface BaseDao<T> {
+public interface CollectDao {
 
-	List<T> List(T t);
+	List<Collect> List(Collect collect);
 	
 	User ListById(@Param("id")Integer id);
 	
-	int insert(T t);
+	int insert(Collect collect);
 	
-	int Update(T t);
+	int Update(Collect collect);
 	
 	int Deletes(@Param("ids")String ids);
+
 }

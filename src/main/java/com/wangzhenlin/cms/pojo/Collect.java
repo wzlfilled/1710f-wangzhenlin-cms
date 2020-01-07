@@ -8,8 +8,7 @@ public class Collect {
 	private String text;//
 	private String url;//
 	private Date created;//
-	private Integer userId;//
-	
+	private Integer user_id;//
 	public Integer getId() {
 		return id;
 	}
@@ -34,15 +33,15 @@ public class Collect {
 	public void setCreated(Date created) {
 		this.created = created;
 	}
-	public Integer getUserId() {
-		return userId;
+	public Integer getUser_id() {
+		return user_id;
 	}
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setUser_id(Integer user_id) {
+		this.user_id = user_id;
 	}
 	@Override
 	public String toString() {
-		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + ", userId=" + userId
+		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + ", user_id=" + user_id
 				+ "]";
 	}
 	

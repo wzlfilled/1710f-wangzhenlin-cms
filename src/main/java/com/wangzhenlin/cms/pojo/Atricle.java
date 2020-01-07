@@ -2,7 +2,7 @@ package com.wangzhenlin.cms.pojo;
 
 import java.util.Date;
 
-public class Article {
+public class Atricle {
 
 	private Integer id;//
 	
@@ -12,11 +12,11 @@ public class Article {
 	
 	private String picture;//标题图片
 	
-	private Integer channelId;//所属栏目
+	private Integer channel_id;//所属栏目
 	
-	private Integer categoryId;//所属分类
+	private Integer category_id;//所属分类
 	
-	private Integer userId;//用户Id
+	private Integer user_id;//用户Id
 	
 	private Integer hits;//点击次数
 	
@@ -34,6 +34,7 @@ public class Article {
 	
 	private Integer tousuCnt;//投诉次数
 
+	
 	public Integer getId() {
 		return id;
 	}
@@ -66,28 +67,28 @@ public class Article {
 		this.picture = picture;
 	}
 
-	public Integer getChannelId() {
-		return channelId;
+	public Integer getChannel_id() {
+		return channel_id;
 	}
 
-	public void setChannelId(Integer channelId) {
-		this.channelId = channelId;
+	public void setChannel_id(Integer channel_id) {
+		this.channel_id = channel_id;
 	}
 
-	public Integer getCategoryId() {
-		return categoryId;
+	public Integer getCategory_id() {
+		return category_id;
 	}
 
-	public void setCategoryId(Integer categoryId) {
-		this.categoryId = categoryId;
+	public void setCategory_id(Integer category_id) {
+		this.category_id = category_id;
 	}
 
-	public Integer getUserId() {
-		return userId;
+	public Integer getUser_id() {
+		return user_id;
 	}
 
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setUser_id(Integer user_id) {
+		this.user_id = user_id;
 	}
 
 	public Integer getHits() {
@@ -157,12 +158,11 @@ public class Article {
 	@Override
 	public String toString() {
 		return "Article [id=" + id + ", title=" + title + ", content=" + content + ", picture=" + picture
-				+ ", channelId=" + channelId + ", categoryId=" + categoryId + ", userId=" + userId + ", hits=" + hits
-				+ ", hot=" + hot + ", status=" + status + ", deleted=" + deleted + ", created=" + created + ", updated="
-				+ updated + ", commentCnt=" + commentCnt + ", tousuCnt=" + tousuCnt + "]";
+				+ ", channel_id=" + channel_id + ", category_id=" + category_id + ", user_id=" + user_id + ", hits="
+				+ hits + ", hot=" + hot + ", status=" + status + ", deleted=" + deleted + ", created=" + created
+				+ ", updated=" + updated + ", commentCnt=" + commentCnt + ", tousuCnt=" + tousuCnt + "]";
 	}
 
-	
 	
 	
 	

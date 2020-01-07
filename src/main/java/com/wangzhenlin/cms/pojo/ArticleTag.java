@@ -1,6 +1,6 @@
 package com.wangzhenlin.cms.pojo;
 
-public class Articletag {
+public class ArticleTag {
 
 	private Integer aid;//文章Id
 	private Integer tid;//标签Id

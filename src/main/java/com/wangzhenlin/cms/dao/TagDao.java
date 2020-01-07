@@ -4,18 +4,20 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
+import com.wangzhenlin.cms.pojo.ArticleTag;
 import com.wangzhenlin.cms.pojo.User;
 
 
-public 	interface BaseDao<T> {
+public interface TagDao {
 
-	List<T> List(T t);
+	List<ArticleTag> List(ArticleTag tag);
 	
 	User ListById(@Param("id")Integer id);
 	
-	int insert(T t);
+	int insert(ArticleTag tag);
 	
-	int Update(T t);
+	int Update(ArticleTag tag);
 	
 	int Deletes(@Param("ids")String ids);
+
 }

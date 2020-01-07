@@ -4,8 +4,7 @@ public class Category {
 
 	private Integer id;
 	private String name;//名称
-	private Integer channelId;//频道Id
-	
+	private Integer channel_id;//频道Id
 	public Integer getId() {
 		return id;
 	}
@@ -18,17 +17,17 @@ public class Category {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Integer getChannelId() {
-		return channelId;
+	public Integer getChannel_id() {
+		return channel_id;
 	}
-	public void setChannelId(Integer channelId) {
-		this.channelId = channelId;
+	public void setChannel_id(Integer channel_id) {
+		this.channel_id = channel_id;
 	}
 	@Override
 	public String toString() {
-		return "Category [id=" + id + ", name=" + name + ", channelId=" + channelId + "]";
+		return "Category [id=" + id + ", name=" + name + ", channel_id=" + channel_id + "]";
 	}
-
+	
 	
 	
 	

@@ -4,18 +4,20 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
+import com.wangzhenlin.cms.pojo.Atricle;
 import com.wangzhenlin.cms.pojo.User;
 
 
-public 	interface BaseDao<T> {
+public interface AtricleDao {
 
-	List<T> List(T t);
+	List<Atricle> List(Atricle atricle);
 	
 	User ListById(@Param("id")Integer id);
 	
-	int insert(T t);
+	int insert(Atricle atricle);
 	
-	int Update(T t);
+	int Update(Atricle atricle);
 	
 	int Deletes(@Param("ids")String ids);
+
 }

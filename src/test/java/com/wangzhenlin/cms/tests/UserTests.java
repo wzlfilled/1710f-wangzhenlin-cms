@@ -31,7 +31,7 @@ public class UserTests {
 //		userDao.delete("200");
 		
 		User selectById = userDao.selectById(199);
-		System.out.println(selectById);
+		System.out.println("+++++++++++++++++++++++++"+selectById+"-----------------------------");
 	}
 	
 }

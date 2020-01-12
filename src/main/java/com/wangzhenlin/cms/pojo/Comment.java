@@ -1,13 +1,18 @@
 package com.wangzhenlin.cms.pojo;
 
-public class Comment {
+import java.util.Date;
 
+public class Comment {
+	/**  **/
 	private Integer id;
-	private Integer articleId;//文章Id
-	private Integer userId;//用户Id
-	private String content;//评论内容
-	private String created;//评论时间
-	
+	/** 文章Id **/
+	private Integer articleId;
+	/** 用户Id **/
+	private Integer userId;
+	/** 评论内容 **/
+	private String content;
+	/** 评论时间 **/
+	private Date created;
 	public Integer getId() {
 		return id;
 	}
@@ -32,10 +37,11 @@ public class Comment {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getCreated() {
+	
+	public Date getCreated() {
 		return created;
 	}
-	public void setCreated(String created) {
+	public void setCreated(Date created) {
 		this.created = created;
 	}
 	@Override
@@ -43,6 +49,4 @@ public class Comment {
 		return "Comment [id=" + id + ", articleId=" + articleId + ", userId=" + userId + ", content=" + content
 				+ ", created=" + created + "]";
 	}
-	
-	
 }

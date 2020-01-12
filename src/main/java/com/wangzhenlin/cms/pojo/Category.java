@@ -1,10 +1,13 @@
 package com.wangzhenlin.cms.pojo;
 
 public class Category {
-
+	/**  **/
 	private Integer id;
-	private String name;//名称
-	private Integer channel_id;//频道Id
+	/** 名称 **/
+	private String name;
+	/** 频道Id **/
+	private Integer channel_id;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -27,8 +30,4 @@ public class Category {
 	public String toString() {
 		return "Category [id=" + id + ", name=" + name + ", channel_id=" + channel_id + "]";
 	}
-	
-	
-	
-	
 }

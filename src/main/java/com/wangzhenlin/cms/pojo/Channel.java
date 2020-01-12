@@ -1,13 +1,16 @@
 package com.wangzhenlin.cms.pojo;
 
 public class Channel {
-
+	/**  **/
 	private Integer id;
-	private String name;//名称
-	private String description;//描述
-	private String icon;//图标
-	private Integer sorted;//排序
-	
+	/** 名称 **/
+	private String name;
+	/** 描述 **/
+	private String description;
+	/** 图标 **/
+	private String icon;
+	/** 排序 **/
+	private Integer sorted;
 	public Integer getId() {
 		return id;
 	}
@@ -43,7 +46,5 @@ public class Channel {
 		return "Channel [id=" + id + ", name=" + name + ", description=" + description + ", icon=" + icon + ", sorted="
 				+ sorted + "]";
 	}
-
-	
 	
 }

@@ -4,7 +4,12 @@
 <mapper namespace="com.wangzhenlin.cms.dao.UserDao">
 
 	<select id="select" resultType="user">
-		SELECT * FROM cms_user
+		SELECT * FROM cms_user 
+		<where>
+			<if test="nickname!=null and nickname!=''">
+				nickname like '%${nickname}%'
+			</if>
+		</where>
 	</select>
 	
 	<select id="selectById" resultType="user">

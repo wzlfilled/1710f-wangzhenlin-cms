@@ -3,12 +3,16 @@ package com.wangzhenlin.cms.pojo;
 import java.util.Date;
 
 public class Collect {
-	
+	/**  **/
 	private Integer id;
-	private String text;//
-	private String url;//
-	private Date created;//
-	private Integer user_id;//
+	/**  **/
+	private String text;
+	/**  **/
+	private String url;
+	/**  **/
+	private Date created;
+	/**  **/
+	private Integer user_id;
 	public Integer getId() {
 		return id;
 	}
@@ -27,6 +31,7 @@ public class Collect {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	
 	public Date getCreated() {
 		return created;
 	}
@@ -44,8 +49,5 @@ public class Collect {
 		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + ", user_id=" + user_id
 				+ "]";
 	}
-	
-	
-
 	
 }

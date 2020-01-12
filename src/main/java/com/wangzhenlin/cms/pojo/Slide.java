@@ -1,12 +1,14 @@
 package com.wangzhenlin.cms.pojo;
 
 public class Slide {
-
-	private Integer id;//
-	private String title;//标题
-	private String picture;//图片地址
-	private String url;//链接url   网址
-	
+	/**  **/
+	private Integer id;
+	/** 标题 **/
+	private String title;
+	/** 图片地址 **/
+	private String picture;
+	/** 链接url **/
+	private String url;
 	public Integer getId() {
 		return id;
 	}
@@ -35,7 +37,6 @@ public class Slide {
 	public String toString() {
 		return "Slide [id=" + id + ", title=" + title + ", picture=" + picture + ", url=" + url + "]";
 	}
-
 	
 	
 }

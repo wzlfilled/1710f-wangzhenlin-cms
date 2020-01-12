@@ -1,10 +1,10 @@
 package com.wangzhenlin.cms.pojo;
 
 public class Tag {
-
+	/**  **/
 	private Integer id;
-	private String tagname;//标签名称
-	
+	/** 标签名称 **/
+	private String tagname;
 	public Integer getId() {
 		return id;
 	}
@@ -21,8 +21,5 @@ public class Tag {
 	public String toString() {
 		return "Tag [id=" + id + ", tagname=" + tagname + "]";
 	}
-	
-	
-
 	
 }

@@ -1,10 +1,10 @@
 package com.wangzhenlin.cms.pojo;
 
 public class ArticleTag {
-
-	private Integer aid;//文章Id
-	private Integer tid;//标签Id
-	
+	/** 文章Id **/
+	private Integer aid;
+	/** 标签Id **/
+	private Integer tid;
 	public Integer getAid() {
 		return aid;
 	}
@@ -19,10 +19,7 @@ public class ArticleTag {
 	}
 	@Override
 	public String toString() {
-		return "Articletag [aid=" + aid + ", tid=" + tid + "]";
+		return "Article_tag [aid=" + aid + ", tid=" + tid + "]";
 	}
-	
-	
-
 	
 }

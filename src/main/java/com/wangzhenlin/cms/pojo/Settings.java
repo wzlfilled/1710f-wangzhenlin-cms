@@ -1,14 +1,20 @@
 package com.wangzhenlin.cms.pojo;
 
 public class Settings {
-
+	/**  **/
 	private Integer id;
-	private String site_domain;//网站域名
-	private String site_name;//网站名称
-	private Integer article_list_size;//文章列表数据条数
-	private Integer slide_size;//轮播图最大条数
-	private String adminUsername;//管理员帐号
-	private String adminPassword;//管理员密码
+	/** 网站域名 **/
+	private String site_domain;
+	/** 网站名称 **/
+	private String site_name;
+	/** 文章列表数据条数 **/
+	private Integer article_list_size;
+	/** 轮播图最大条数 **/
+	private Integer slide_size;
+	/** 管理员帐号 **/
+	private String admin_username;
+	/** 管理员密码 **/
+	private String admin_password;
 	public Integer getId() {
 		return id;
 	}
@@ -39,26 +45,22 @@ public class Settings {
 	public void setSlide_size(Integer slide_size) {
 		this.slide_size = slide_size;
 	}
-	public String getAdminUsername() {
-		return adminUsername;
+	public String getAdmin_username() {
+		return admin_username;
 	}
-	public void setAdminUsername(String adminUsername) {
-		this.adminUsername = adminUsername;
+	public void setAdmin_username(String admin_username) {
+		this.admin_username = admin_username;
 	}
-	public String getAdminPassword() {
-		return adminPassword;
+	public String getAdmin_password() {
+		return admin_password;
 	}
-	public void setAdminPassword(String adminPassword) {
-		this.adminPassword = adminPassword;
+	public void setAdmin_password(String admin_password) {
+		this.admin_password = admin_password;
 	}
 	@Override
 	public String toString() {
 		return "Settings [id=" + id + ", site_domain=" + site_domain + ", site_name=" + site_name
-				+ ", article_list_size=" + article_list_size + ", slide_size=" + slide_size + ", adminUsername="
-				+ adminUsername + ", adminPassword=" + adminPassword + "]";
+				+ ", article_list_size=" + article_list_size + ", slide_size=" + slide_size + ", admin_username="
+				+ admin_username + ", admin_password=" + admin_password + "]";
 	}
-	
-	
-	
-	
 }

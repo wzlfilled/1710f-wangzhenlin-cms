@@ -3,12 +3,14 @@ package com.wangzhenlin.cms.pojo;
 import java.util.Date;
 
 public class Link {
-
+	/**  **/
 	private Integer id;
+	/**  **/
 	private String text;
+	/**  **/
 	private String url;
+	/**  **/
 	private Date created;
-	
 	public Integer getId() {
 		return id;
 	}
@@ -27,6 +29,7 @@ public class Link {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	
 	public Date getCreated() {
 		return created;
 	}
@@ -37,8 +40,4 @@ public class Link {
 	public String toString() {
 		return "Link [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + "]";
 	}
-	
-	
-
-	
 }
